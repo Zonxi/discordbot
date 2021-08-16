@@ -20,6 +20,5 @@ client.on("messageCreate", async (message) => {
         if (!message.guild.me.permissions.has(command.BotPerms || [])) return message.channel.send(`I need \`${command.BotPerms || []}\` Permissions`)
 
         await command.run(client, message, args, Discord) // <= discord over there
-    }
- })
- 
+    } // This should be it lets test it out :D
+}) // ahh.. wait before this we need to add aliases to the command
